@@ -1,0 +1,8 @@
+---
+- hosts: vm2
+
+  tasks:
+  - name: Installing HTTPD
+    yum: name=httpd state=latest
+  - name: Starting HTTPD
+    service: name=httpd state=started

@@ -1,0 +1,9 @@
+---
+- hosts: vm2
+  become: yes
+
+  tasks:
+  - name: Create bacha user
+    user: 
+     name: bacha
+     password: redhat
